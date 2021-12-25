@@ -518,7 +518,10 @@ ul {
 .clients.list {
   display: flex;
   padding: 0;
-  justify-content: space-between;
+}
+
+.client-item:not(:last-child) {
+  margin-right: var(--card-set-gap);
 }
 
 .clients-icon {
