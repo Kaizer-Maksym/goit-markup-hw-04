@@ -547,8 +547,10 @@ ul {
 /*------------------------ Footer ----------------*/
 .footer.container {
   display: flex;
-  padding: 0;
-  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
   /* outline: 2px solid tomato; */
 }
@@ -556,7 +558,6 @@ ul {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: var(--primery-bg-color);
 
   /* outline: 2px solid tomato; */
@@ -618,13 +619,11 @@ ul {
 
 /* -----------------------Social networks-------------------------- */
 
-.cf-container {
+.flex-item-2 {
   padding: 0;
   margin-left: 70px;
-  margin-top: 0;
-  margin-bottom: 0;
+  max-height: 80px;
   width: 206px;
-
   align-self: center;
 }
 
@@ -644,6 +643,7 @@ ul {
 
 .cf.list {
   display: flex;
+  width: 206px;
 }
 
 .cf-item:not(:last-child) {
@@ -660,14 +660,13 @@ ul {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.social-icon:hover,
-.social-icon:focus {
-  background-color: var(--accent-color);
+.cf-networks {
+  fill: var(--white-color);
 }
 
-.networks:hover,
-.networks:focus {
-  fill: var(--white-color);
+.cf-icon:hover,
+.cf-icon:focus {
+  background-color: var(--accent-color);
 }
 
 /*--------------------- PORTFOLIO----------------------*/
@@ -721,6 +720,12 @@ ul {
   margin-left: var(--card-set-gap);
 
   /* outline: 2px solid tomato; */
+}
+
+.exampl.link:hover,
+.exampel.link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .exampl-content {
