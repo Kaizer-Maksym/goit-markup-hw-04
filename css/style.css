@@ -464,7 +464,10 @@ ul {
   display: flex;
   margin: 0 32px 30px;
   align-items: center;
-  justify-content: space-between;
+}
+
+.team-slicon:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-icon {
